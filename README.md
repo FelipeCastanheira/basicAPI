@@ -1,5 +1,8 @@
 # basicAPI
-Uma API básica em desenvolvimento | Node.js
+Desenvolvi essa API básica na condução de uma monitoria de revisão junto a estudantes da Trybe 
+
+ - Node.js
+ - Express
 
 ## Requisitos
 
