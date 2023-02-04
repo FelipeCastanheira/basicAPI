@@ -5,6 +5,14 @@ const fs = require('fs').promises;
 
 const router = express.Router();
 
+router.get('/', async (_req, res, next) => {
+	try {
+		return res.status(200).json('Online! Acesse os filmes em /filmes');
+	} catch (error) {
+		next(error);
+	}
+});
+
 router.get('/filmes', async (_req, res, next) => {
 	try {
 		const data = await fs.readFile('./filmes.json', 'utf-8');
